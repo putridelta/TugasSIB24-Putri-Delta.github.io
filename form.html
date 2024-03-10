@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body style="margin: 0;">
+    <nav>
+        <img src="src/image/logo_perpus.png" alt="logo" height="60px">
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="#koleksi">Koleksi</a></li>
+            <li><a href="#profil">Profil Kampus</a></li>
+            <li><a href="">Pusat Bantuan</a></li>
+            <a href=""><button>Sudah Ada Akun ?</button></a>
+        </ul>
+    </nav>
+    <section>
+    <h1>Registrasi Akun</h1>
+    
+    <form action="" method="post">
+    <div class="parent-section">
+    <div class="section50">
+    <label for="nama">Nama Lengkap</label><br>
+    <input type="text" name="nama" placeholder="Nama Lengkap" required><br>
+    </div>
+    <div class="section50">
+    <label for="email">Email</label><br>
+    <input type="email" name="email" placeholder="Email aktif" required><br>
+    </div>
+    </div>
+
+    <div class="parent-section">
+    <div class="section50">
+    <label for="no_hp">No HP</label><br>
+    <input type="text" name="no_hp" placeholder="No HP aktif"><br>
+    </div>
+    <div class="section50">
+    <label >Jenis Kelamin</label><br>
+    <input type="radio" id="jk" name="jk">
+    <label class="jenis_kelamin">Laki-Laki</label><br>
+    <input type="radio" id="jk" name="jk">
+    <label class="jenis_kelamin">Perempuan</label><br>
+</div>
+</div>
+<div class="parent-section">
+    <div class="section50">
+    <label for="prodi">Prodi</label>
+    <select name="prodi" id="prodi">
+        <option value="">Pilih</option>
+        <optgroup label="Fakultas Teknik" id="fakultas">
+        <option value="Teknik sipil">Teknik Sipil</option>
+        <option value="Teknik informatika">Teknik Informatika</option>
+        <option value="Teknik lingkungan">Teknik Lingkungan</option>
+        <option value="Teknik mesin">Teknik Mesin</option>
+        <option value="Sistem informasi">Sistem Informasi</option>
+    </optgroup>
+    <optgroup label="Hukum" id="fakultas">
+        <option value="ilmu hukum">Hukum</option>
+    </optgroup>
+    <optgroup label="Keguruan & Ilmu Pengetahuan">
+        <option value="Bahasa Inggris">Pend. Bahasa Inggris</option>
+        <option value="Sastra Indonesia">Pend. Bahasa & Sastra Indonesia</option>
+        <option value="biologi">Pend. Biologi</option>
+        <option value="Matematika">Pend. Matematika</option>
+        <option value="PG Paud">PG PAUD</option>
+        <option value="olahraga">Pend. Olahraga</option>
+        <option value="ppg">Program Profesi Guru</option>
+    </optgroup>
+    <optgroup label="Agama Islam" id="fakultas"> 
+        <option value="Agama islam">Pend. Agama Islam</option>
+        <option value="ekonomi syariah">Ekonomi Syariah</option>
+    </optgroup>
+    <optgroup label="Pertanian" id="fakultas">
+        <option value="Agroteknologi">Agroteknologi</option>
+        <option value="agribisnis">Agribisnis</option>
+        <option value="TIP">Teknologi Industri Pertanian</option>
+    </optgroup>
+    <optgroup label="Ekonomi & Bisnis">
+        <option value="manajemen">Manajemen</option>
+        <option value="akuntansi">Akuntansi</option>
+        <option value="s2 manajemen">S-2 Magister Manajemen</option>
+    </optgroup>
+    <optgroup label="Ilmu Sosial & Politik" id="fakultas">
+        <option value="ilmu pemerintahan">Ilmu Pemerintahan</option>
+        <option value="ilmu komunikasi">Ilmu Komunikasi</option>
+        <option value="perhotelan">D3 Perhotelan</option>
+    </optgroup>
+    <optgroup label="Psikologi" id="jurusan">
+        <option value="psikologi">Psikologi</option>
+    </optgroup>
+    <optgroup label="Ilmu Kesehatan">
+        <option value="S1 Keperawatan">S1 Keperawatan</option>
+        <option value="D3 Keperawatan">D3 Keperawatan</option>
+        <option value="profesi ners">Profesi Ners</option>
+    </optgroup>
+    </select><br>
+</div>
+
+<div class="section50">
+    <label>Hobi</label><br>
+    <input type="checkbox" id="hobi" name="membaca" >
+    <label for="membaca">Membaca</label><br>
+    <input type="checkbox" id="hobi" name="menulis">
+    <label for="menulis">Menulis</label><br>
+    <input type="checkbox" id="hobi" name="menyanyi">
+    <label for="menyanyi">Menyanyi</label><br>
+    <input type="checkbox" id="hobi" name="olahraga">
+    <label for="olahraga">Olahraga</label>
+</div>
+</div>
+<div style="padding:0px 30px; margin: 40px;">
+    <label for="alamat">Alamat</label><br>
+    <textarea name="alamat" id="alamat" cols="30" rows="3" placeholder="Alamat Lengkap"></textarea><br>
+</div>
+<div style="padding:0px 30px; margin: 40px;">
+    <label for="foto">Foto Diri</label><br>
+    <input type="file" id="foto" name="foto"><br>
+</div>
+<div class="btn-submit">
+    <button type="submit">Daftar Sekarang</button>
+</div>
+</form>
+</section>
+</body>
+</html>

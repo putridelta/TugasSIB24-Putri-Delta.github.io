@@ -1,0 +1,355 @@
+:root {
+    --button-color: #124076;
+    --font-color:rgba(0, 0, 0, 0.719);
+
+  }
+*{
+    font-family: "Poppins", sans-serif;
+  }
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    padding-left: 20px;
+    height: 70px;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+}
+nav img{
+    padding-top: 2px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+
+}
+nav ul li{
+    padding: 0px 15px;
+
+}
+nav ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--font-color);
+    
+}
+nav ul button {
+    padding: 10px 25px;
+    background-color:var(--button-color);
+    color: white;
+    border-radius: 20px;
+    font-size: 16;
+    font-weight: 500;
+}
+nav ul button:hover {
+    padding: 10px 25px;
+    background-color:var(--button-color);
+    color: white;
+    border-radius: 20px;
+    font-size: 16;
+    font-weight: 700;
+}
+#btn-registrasi{
+    background-color: transparent;
+    color: var(--font-color);
+}
+#btn-registrasi:hover{
+    background-color: var(--button-color);
+    color: white;
+}
+/*
+index
+*/
+
+.carousel-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    padding-top: 70px;
+    
+}
+.mySlide{
+    display: none;
+}
+img {
+    vertical-align: middle;
+}
+.dot   {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active {
+    background-color: #717171;
+  }
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+
+@keyframes fade{
+    from {opacity: 50%;}
+    to {opacity: 100%;}
+}
+
+
+.content-koleksi{
+    padding:20px;
+}
+
+.row{
+    display:flex;
+    margin: 80px;
+    justify-content: center;
+    
+    
+}
+.col-3{
+    width: 30%;
+    text-align: center;
+    padding: 0px 25px;
+    
+}
+.col-3 img{
+    border-radius: 50%;
+    width: 100px;
+}
+.col-3 h2 {
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color:var(--font-color);
+    font-family: "Poppins", sans-serif;
+}
+.col-3 p{
+    color: var(--font-color);
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}
+
+.col-5 {
+    width: 50%;
+    padding:20px;
+}
+.col-5 ul{
+    list-style: none;
+    font-size: 15px;
+    font-weight: normal;
+
+}
+
+.content-profil {
+    background-image: linear-gradient(to bottom, #ffffff, #8b84dd85,#ffffff);
+    padding: 25px;
+}
+.content-profil img{
+    position: relative;
+    width: 40%;
+    height: 300px;
+    border-radius: 20%;
+    padding: 0 80px;
+    animation: pulse 6s ease-in-out ;
+
+}
+@keyframes pulse{
+    0%{
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    50%{
+        transform:  scale(1.2);
+        opacity: 0.7;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.profil1{
+    display: inline-block;
+    border-radius: 5%;
+    width: 100%;
+    position: relative;
+    
+}
+.profil1 p {
+    padding-right: 25px;
+    padding-left: 20px;
+    display:inline-block;
+    vertical-align: middle;
+    width: 40%;
+    color: var(--font-color);
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+footer{
+    background-color: #000000d2;
+    color: white;
+    height: 100%;
+    padding: 20px;
+    margin: 0%;
+}
+.sub-footer {
+    background-color: black;
+    color:rgba(255, 255, 255, 0.678);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 12px;
+}
+
+/*
+form
+*/
+section{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    padding-top :100px;
+}
+section h1{
+    text-align: center;
+    color: var(--font-color);
+    font-size: 30px;
+
+}
+
+input, 
+textarea
+{
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 10px;
+}
+select{
+    padding: 10px;
+    width: 100%;
+    margin: 2px;
+    border-radius: 10px;
+    
+}
+#alamat{
+    height: 100px;
+}
+#jk,
+#hobi{
+    margin: 10px;
+    width: 20px;
+}
+
+label{
+    padding: 10px;
+}
+
+.parent-section{
+    display: flex;
+    padding: 0px 40px;
+}
+.section50{
+    width: 45%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+.btn-submit{
+text-align: center;
+padding: 30px;
+}
+
+.btn-submit button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: var(--button-color);
+    color: white;
+    font-weight: medium;
+    
+}
+.btn-submit button:hover{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: var(--button-color);
+    color: white;
+    font-weight: bold;
+    
+}
+.content-js{
+    margin: 0px 200px;
+}
+.content-js input{
+    width: 50px;
+    padding: 5px;
+    border: 1px solid var(--font-color);
+    border-radius: 10px;
+    height: 10px;
+}
+.class-operator{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    
+}
+.class-pop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    
+}
+.class-operator p {
+    margin: 0px 10px;
+
+}
+.content-js img{
+    text-align: center;
+    width: 100%;
+}
+.class-operator button {
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: none;
+    color: var(--font-color);
+}
+.class-operator button:hover {
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: var(--button-color);
+    color: white;
+}
+.class-pop button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: var(--button-color);
+    font-size: 20px;
+}
+.class-pop button:hover {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: var(--button-color);
+    font-size: 20px;
+}
+/*
+.section50{ 
+    display: flex;
+}*/
