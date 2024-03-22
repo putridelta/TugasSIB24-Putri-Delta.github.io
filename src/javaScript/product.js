@@ -22,7 +22,7 @@ let baseUrl = "https://reqres.in/api/";
     image : "src/image/product/guruku.svg",
     nama_produk : "Guruku Sahabatku",
     harga : 10000,
-    Deskripsi : " novel yang mengangkat cerita berdasarkan kisah nyata yang menjelaskan lika-liku kehidupan anak muda yang bernama Iyas."
+    Deskripsi : "novel yang mengangkat cerita berdasarkan kisah nyata yang menjelaskan lika-liku kehidupan anak muda yang bernama Iyas."
 },
 {
     image : "src/image/product/hujan.svg",
