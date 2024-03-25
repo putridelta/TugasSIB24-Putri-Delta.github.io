@@ -15,7 +15,6 @@ nav{
     display: flex;
     position: fixed;
     justify-content: space-between;
-    padding-left: 20px;
     height: 70px;
     z-index: 1;
     background-color: white;
@@ -66,6 +65,15 @@ nav ul button:hover {
 #btn-registrasi:hover{
     background-color: var(--button-color);
     color: white;
+}
+.icon-menu {
+    display : flex;
+    font-size :25px;
+    align-items: center;
+    font-weight: bold;
+}
+.nav-mobile{
+    display: none;
 }
 /*
 index
@@ -358,6 +366,13 @@ padding: 30px;
     padding: 0px 20px;
 
 }
+
+.menu-icon {
+   display: none;
+}
+.icon-menu i, .icon-menu h4{
+    display: none;
+}
 .card{
     height: 500px;
     width: 180px;
@@ -439,4 +454,233 @@ padding: 30px;
     font-family:"Poppins", sans-serif ;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.705);
+}
+
+/*Responsive design*/
+@media only screen and (max-width: 838px){
+    nav{
+        flex-wrap: wrap;
+    }
+    nav ul {
+        background-color: #ffffff;
+        margin-top: 0;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 20px;
+     }
+     nav ul.hidden {
+      display: none;  
+     }
+     nav ul li{
+        
+        padding: 20px 0px;
+    
+    }
+    .nav-mobile{
+        display: none;
+    }
+     .menu-icon {
+        font-size: 35px;
+        font-weight: bold;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+    }
+    .title-baner{
+       display: none;
+    }
+    #p-banner{
+      display: none;
+    }
+}
+@media only screen and (max-width: 576px){
+    #listProduk{
+        background-color: #be6eff;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 90px 2px;
+    
+    }
+    .menu-icon {
+        display: none;
+    }
+    .card{
+        height: 440px;
+        width: 180px;
+        text-align: center;
+        border: 1px solid none;
+        border-radius: 20px;
+        margin: 10px;
+        
+    }
+    .card-image{
+        padding-top: 20px;
+        height: 200px;
+      
+    }
+    nav{
+    
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        height: 90px;
+        z-index: 1;
+        background-color: #ffffff;
+        width: 100%;
+        box-shadow: 3px 8px 12px rgba(95, 84, 84, 0.5);
+    }
+  
+    nav ul {
+       display: none;
+    
+    }
+   .icon-menu img {
+    justify-content: center;
+   }
+   
+    .title-baner, .baner, #p-banner, .sub-title{
+        display: none;
+    }
+    .nav-mobile {
+        display: flex;
+        justify-content: center;
+        background-color: #ffffff;
+    }
+    .nav-mobile ul {
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        padding-right: 30px;
+    }
+    .nav-mobile ul li {
+        padding: 0px 20px;
+    }
+    .nav-mobile ul li a  {
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .nav-mobile ul li i {
+        font-size: 25px;
+    }
+}
+    
+
+/*Login*/
+
+
+.card-parentlogin {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  
+ 
+}
+.card-login {
+    position: relative;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.247);
+    border: 1px solid none;
+    box-shadow: 5px 5px 10px rgb(99, 96, 100);
+    padding: 20px 20px;
+    border-radius: 20px;
+    margin: 10px;
+    width: 500px;
+    
+}
+.card-login h2, 
+.card-login p{
+    text-align: center;
+    margin:20px 0;
+}
+.card-login input{
+    width: 90%;
+    margin: 10px;
+}
+.card-login #remember{
+    text-align: start;
+    width: 20px;
+    margin-right: 0;
+}
+.card-login a, .card-login span {
+    padding: 10px;
+}
+.btn-lgn {
+    text-align: center;
+    width: 30%;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    background-color: var(--button-color);
+    color: white;
+    border-radius: 20px;
+
+}
+
+@media only screen and (max-width: 862px){
+    .card-login {
+        position: relative;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.247);
+        border: 1px solid none;
+        box-shadow: 5px 5px 10px rgb(99, 96, 100);
+        padding: 20px 20px;
+        border-radius: 20px;
+        margin: 10px;
+        width: 400px;
+        
+    }
+    .card-login p{
+        text-align: center;
+        margin:40px 0;
+        padding-bottom: 30px;
+    }
+    #password {
+        margin-bottom: 40px;
+    }
+    .btn-lgn {
+
+        width: 50%;
+        padding: 10px 20px;
+        margin: 50px 0px;
+        background-color: var(--button-color);
+        color: white;
+        border-radius: 20px;
+        font-size: 14px;
+    
+    }
+    
+}@media only screen and (max-width: 546px){
+    .card-login {
+        position: relative;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.247);
+        border: 1px solid none;
+        box-shadow: 5px 5px 10px rgb(99, 96, 100);
+        padding: 20px 25px;
+        border-radius: 20px;
+        margin: 10px;
+        width: 300px;
+        
+    }
+    .card-login p{
+        text-align: center;
+        margin:40px 0;
+        padding-bottom: 30px;
+    }
+    #password {
+        margin-bottom: 40px;
+    }
+    .btn-lgn {
+
+        width: 50%;
+        padding: 10px 20px;
+        margin: 50px 0px;
+        background-color: var(--button-color);
+        color: white;
+        border-radius: 20px;
+        font-size: 14px;
+    
+    }
 }
